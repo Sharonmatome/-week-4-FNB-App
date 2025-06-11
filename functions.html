@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 id="heading" onclick="changeText()">Welcome to ShazRon world</h1>
+        <p id="addition"></p>
+        
+        <script>
+            document.getElementById("addition").innerHTML = addNumbers( 17, 23);
+            function changeText(){
+                if(document.getElementById("heading").innerHTML=='Welcome to ShazRon world'){
+                    document.getElementById("heading").innerHTML='Hello'
+                } else {
+                    document.getElementById("heading").innerHTML='Welcome to ShazRon world'
+                }
+            }
+
+            function addNumbers(num1, num2){
+                return num1 + num2;
+            }
+
+            </script>
+    </body>
+</html>
